@@ -48,6 +48,7 @@ a {
   font-family: 'Merriweather', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
+  text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   background-color: black; }
   #mainNav .navbar-toggler {
@@ -84,7 +85,7 @@ a {
         padding-top: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black; }
+        background: #232323; }
       #mainNav .nav-link.active {
         outline: none;
         background-color: rgba(255, 255, 255, 0.3); }
@@ -95,7 +96,6 @@ a {
   display: table;
   width: 100%;
   height: auto;
-  padding: 200px 0;
   text-align: center;
   color: white;
   background-image: url("../img/grace_hero.jpg") ;
@@ -108,19 +108,21 @@ a {
     display: table-cell;
     vertical-align: middle; }
     .masthead .intro-body .brand-heading {
+      text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
       font-size: 50px; }
     .masthead .intro-body .intro-text {
+      text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
       font-size: 18px; }
   @media (min-width: 768px) {
     .masthead {
       height: 100%;
       padding: 0; }
       .masthead .intro-body .brand-heading {
+        text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
         font-size: 100px; }
       .masthead .intro-body .intro-text {
-        font-size: 22px; } }
-
-
+        text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+        font-size: 26px; } }
 
 .btn-circle {
   font-size: 26px;
@@ -140,6 +142,26 @@ a {
     outline: none;
     background: rgba(255, 255, 255, 0.1); }
 
+.btn-circle-hero {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 38px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -mo-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  box-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
+  background: transparent; }
+  .btn-circle-hero:focus, .btn-circle-hero:hover {
+    color: white;
+    outline: none;
+    box-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
+    background: rgba(255, 255, 255, 0.1); }
+
 .content-section {
   padding-top: 150px;
   padding-bottom: 150px; }
@@ -149,7 +171,7 @@ a {
   padding-bottom: 150px; }
 
 .content-section-about {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 150px; }
 
 
@@ -183,6 +205,11 @@ a {
   text-transform: none;
   border-radius: 0;
   color: black;
+}
+@media(max-width:667){
+  .btn-links, a.btn-links{
+    font-size: 10px;
+  }
 }
 
 .btn-default {
@@ -237,6 +264,10 @@ body {
   padding: 30px;
   border: 1px solid #B8AB76;
 }
+.project-contain:hover {
+  padding: 30px;
+  box-shadow: 0px 0px 35px #B8AB76;
+}
 
 .experience-bold {
   font-family: 'Merriweather', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -267,4 +298,27 @@ body {
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
+}
+
+.p-100 {
+  padding: 100px;
+}
+
+.section-header {
+  display: table;
+  width: 100%;
+  height:100vh;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.section-header .section-body-container {
+  display: table-cell;
+  vertical-align: middle; }
+
+.img-headshot {
+  
 }
