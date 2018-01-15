@@ -96,6 +96,7 @@ a {
   display: table;
   width: 100%;
   height: auto;
+  padding: 200px 0;
   text-align: center;
   color: white;
   background-image: url("../img/grace_hero.jpg") ;
@@ -104,6 +105,8 @@ a {
   -o-background-size: cover;
   background-size: cover;
   max-width: 100%;
+  background-color: black;
+  background-position: center center;
 }
   .masthead .intro-body {
     display: table-cell;
@@ -116,10 +119,8 @@ a {
       font-size: 18px; }
   @media (min-width: 768px) {
     .masthead {
-      /* height: 100%; */
-      height: auto;
+      height: 100%;
       padding: 0;
-      max-width: 100%;
      }
       .masthead .intro-body .brand-heading {
         text-shadow: 0px 0px 15px rgba(150, 150, 150, 1);
@@ -203,23 +204,29 @@ a {
   font-family: 'Merriweather', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   text-transform: none;
   border-radius: 0;
   color: black;
+  word-wrap: normal;
+  white-space: normal;
+  margin: 0;
 }
 @media(max-width:667){
-  .btn-links, a.btn-links{
+  .btn-links, a.btn-links {
     font-size: 10px;
+    word-wrap: normal;
+    white-space: normal;
+    margin: 0;
   }
 }
 
 .btn-default {
   color: #B8AB76;
   border: 1px solid #B8AB76;
-  background-color: transparent; }
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   .btn-default:focus, .btn-default:hover {
     color: black;
     border: 1px solid #B8AB76;
@@ -268,6 +275,7 @@ body {
   padding: 30px;
   border: 1px solid #B8AB76;
 }
+
 .project-contain:hover {
   padding: 30px;
   box-shadow: 0px 0px 35px #B8AB76;
