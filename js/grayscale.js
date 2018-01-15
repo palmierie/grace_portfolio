@@ -36,10 +36,10 @@
   });
 
   // Email
-  var usrnme = "ericmpalmieri";
-  var hstnme = "gmail.com";
-  var linktext = "mail" + "to:" + usrnme + "@" + hstnme ;
-  $('#eml').attr('href', linktext)
+  // var usrnme = "grace.palmieri";
+  // var hstnme = "gmail.com";
+  // var linktext = "mail" + "to:" + usrnme + "@" + hstnme ;
+  // $('#eml').attr('href', linktext)
   
 
 })(jQuery); // End of use strict
