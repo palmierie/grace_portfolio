@@ -234,14 +234,33 @@ a {
   white-space: normal;
   margin: 0;
 }
+.btn-links-ltr {
+  color: #B8AB76;
+  font-family: 'Merriweather', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: none;
+  border-radius: 0;
+  word-wrap: normal;
+  white-space: normal;
+  margin-bottom: 100px;
+}
 @media(max-width:667){
-  .btn-links, a.btn-links {
+  .btn-links, a.btn-links, .btn-links-ltr {
     font-size: 10px;
     word-wrap: normal;
     white-space: normal;
     margin: 0;
   }
+  .btn-links-ltr {
+    font-size: 10px;
+    word-wrap: normal;
+    white-space: normal;
+    margin-bottom: 100px;
+  }
 }
+
+
 
 .btn-default {
   color: #B8AB76;
